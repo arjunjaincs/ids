@@ -1,7 +1,7 @@
 # ------------------------------------------------------------
 # 🧪 process_and_prepare_dataset.py
 # Dataset Cleaner + Feature Engineer for IDS Model Training
-# Intel Unnati IDS | Author: Arjun | Version: 1.0
+# Intel Unnati IDS | Authors : Arjun, Nimish and Shaurya | Version: 1.0
 # ------------------------------------------------------------
 
 import pandas as pd

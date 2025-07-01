@@ -1,7 +1,7 @@
 # ------------------------------------------------------------
 # 📦 ids_utils.py
 # Utility Functions for Feature Extraction & Attack Detection
-# Intel Unnati IDS | Author: Arjun | Version: 1.0
+# Intel Unnati IDS | Developer : Arjun, Nimish and Shaurya | Version: 1.0
 # ------------------------------------------------------------
 
 import time

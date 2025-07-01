@@ -2,7 +2,7 @@
 **Intel Unnati Summer Training 2025 — Network Security Project**  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 
-Developed by: **Arjun**  
+Developed by: **Arjun Jain, Nimish Ratra and Shaurya Narang**  
 Status: ✅ Completed  
 Model Accuracy: **100%** (Precision/Recall/F1)  
 Interface: Terminal Dashboard  
@@ -161,7 +161,7 @@ sudo nmap -sS -T2 <target_ip> -p 1-100
 
 ## ✨ Credits
 
-Built with 💻 and ☕ by **Arjun**  
+Built with 💻 and ☕ by **Arjun**, **Nimish**, and **Shaurya** 
 Intel Unnati Summer Training 2025 — *AI/ML for Networking*
 
 Licensed under the [MIT License](LICENSE)  

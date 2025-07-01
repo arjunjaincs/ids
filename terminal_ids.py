@@ -1,7 +1,7 @@
 # ------------------------------------------------------------
 # 🖥️ terminal_ids.py
 # Real-Time Terminal Dashboard for AI-Powered IDS
-# Intel Unnati Project | Author: Arjun | Version: 1.0
+# Intel Unnati Project | Authors : Arjun, Nimish and Shaurya | Version: 1.0
 # ------------------------------------------------------------
 
 import os

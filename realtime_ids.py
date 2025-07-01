@@ -1,7 +1,7 @@
 # ------------------------------------------------------------
 # 📡 realtime_ids.py
 # Real-Time Intrusion Detection using ML + Heuristics
-# Intel Unnati IDS | Author: Arjun | Version: 1.0
+# Intel Unnati IDS | Authors : Arjun, Nimish and Shaurya | Version: 1.0
 # ------------------------------------------------------------
 
 import joblib

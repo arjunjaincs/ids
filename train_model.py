@@ -1,7 +1,7 @@
 # ------------------------------------------------------------
 # 🧠 train_model.py
 # Random Forest Training for IDS Packet Classification
-# Intel Unnati IDS | Author: Arjun | Version: 1.0
+# Intel Unnati IDS | Authors : Arjun, Nimish and Shaurya | Version: 1.0
 # ------------------------------------------------------------
 
 import pandas as pd
