@@ -1,0 +1,41 @@
+Intel Unnati IDS Model Metadata
+
+Model Name: ids_model_final.pkl
+Created: June 2025
+Author: Arjun
+Framework: scikit-learn RandomForestClassifier
+
+Features Used (18):
+- frame.time_relative
+- frame.len
+- ip.src
+- ip.dst
+- ip.proto
+- tcp.srcport
+- tcp.dstport
+- tcp.flags
+- udp.srcport
+- udp.dstport
+- udp.length
+- icmp.type
+- icmp.code
+- is_well_known_port
+- port_diff
+- tcp_flag_score
+- proto_complexity
+- payload_size_est
+
+Training Summary:
+- Total Packets: 37,806
+- Attacks: 17,806
+- Normal: 20,000
+- Accuracy: 100%
+- Precision/Recall/F1: 1.00 each
+- Balanced dataset, downsampled normal traffic
+
+Model Type:
+- RandomForestClassifier(n_estimators=100, max_depth=None)
+
+Usage:
+- Used by realtime_ids.py, terminal_ids.py, and streamlit_app.py
+- Loaded via: joblib.load(MODEL_PATH)
