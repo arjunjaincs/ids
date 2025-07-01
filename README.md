@@ -161,7 +161,7 @@ sudo nmap -sS -T2 <target_ip> -p 1-100
 
 ## ✨ Credits
 
-Built with 💻 and ☕ by **Arjun**, **Nimish**, and **Shaurya** 
+Built with 💻 and ☕ by **Arjun**, **Nimish**, and **Shaurya**  
 Intel Unnati Summer Training 2025 — *AI/ML for Networking*
 
 Licensed under the [MIT License](LICENSE)  
