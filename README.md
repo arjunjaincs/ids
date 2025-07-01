@@ -36,8 +36,8 @@ A fully interactive **terminal-based live dashboard** displays real-time alerts 
 ### 1️⃣ Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/ids-project.git
-cd ids-project
+git clone https://github.com/arjunjaincs/ids.git
+cd ids
 ```
 
 ### 2️⃣ Create & Activate Virtual Environment
@@ -95,7 +95,7 @@ After every session:
 - **Algorithm**: RandomForestClassifier (Scikit-learn)
 - **Training Data**: 20K normal, ~18K attack packets
 - **Features**: 18 protocol + behavior-based features
-- **File**: `data/ids_model.pkl`
+- **File**: `data/ids_model_final.pkl`
 
 📄 See `data/confusion_matrix.png` for accuracy
 
@@ -145,11 +145,10 @@ sudo nmap -sS -T2 <target_ip> -p 1-100
 ```bash
 ├── terminal_ids.py          # 🖥️ Main real-time IDS dashboard
 ├── train_model.py           # 🧠 Model training script
-├── offline_predict.py       # 🧪 Optional offline test script
 ├── utils/
 │   └── ids_utils.py         # 🔧 Feature extraction & heuristics
 ├── data/
-│   ├── ids_model.pkl        # 💾 Trained model
+│   ├── ids_model_final.pkl        # 💾 Trained model
 │   └── confusion_matrix.png # 📈 Model evaluation
 ├── logs/                    # 📁 Logged sessions (auto-created)
 ├── requirements.txt         # 📦 Dependencies
