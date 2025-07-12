@@ -157,6 +157,7 @@ To ensure real-time operation and minimal latency, the following enhancements we
 
 ```bash
 ├── terminal_ids.py          # 🖥️ Main real-time IDS dashboard
+├── realtime_ids.py          # ⚡ Minimal real-time IDS (fast, no UI/logs)
 ├── train_model.py           # 🧠 Model training script
 ├── utils/
 │   └── ids_utils.py         # 🔧 Feature extraction & heuristics
