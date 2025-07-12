@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 
 Developed by: **Arjun Jain, Nimish Ratra and Shaurya Narang**  
+Team Name: **Port 80**
 Status: ✅ Completed  
 Model Accuracy: **100%** (Precision/Recall/F1)  
 Interface: Terminal Dashboard  
