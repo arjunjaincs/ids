@@ -29,75 +29,13 @@ A fully interactive **terminal-based live dashboard** displays real-time alerts 
 
 ---
 
-## ⚙️ Setup Instructions (Linux / Kali)
-
-> ✅ Tested on Kali Linux 2024.2 and Ubuntu 22.04
-
-### 1️⃣ Clone the Project
-
-```bash
-git clone https://github.com/arjunjaincs/ids.git
-cd ids
-```
-
-### 2️⃣ Create & Activate Virtual Environment
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3️⃣ Install Required Libraries
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 🚀 How to Run the IDS
-
-Make sure your **network interface** is correct:
-
-```python
-INTERFACE = "wlan0"
-```
-
-(Modify this in `terminal_ids.py` if needed.)
-
-### ✅ Run the Real-Time Terminal IDS
-
-```bash
-sudo venv/bin/python terminal_ids.py
-```
-
-This will:
-- Start live packet sniffing using Scapy
-- Classify traffic as ✅ NORMAL or 🚨 ATTACK
-- Display live dashboard and save logs to `/logs/`
-
----
-
-## 📁 Log Files
-
-After every session:
-- Logs are saved to:  
-  - `logs/ids_log_<timestamp>.csv`  
-  - `logs/ids_log_<timestamp>.log`
-- A summary header is written to the top of both files
-- Logs only store **IP, port, protocol, timestamp, and label**
-- ✅ No raw packets or payloads are saved
-
----
-
 ## 🧠 ML Model Info
 
 - **Algorithm**: RandomForestClassifier (Scikit-learn)
 - **Training Data**: 20K normal, ~18K attack packets
 - **Features**: 18 protocol + behavior-based features
 - **File**: `data/ids_model_final.pkl`
-
-📄 See `data/confusion_matrix.png` for accuracy
+- 📈 See `data/confusion_matrix.png` for accuracy
 
 ---
 
@@ -114,11 +52,60 @@ After every session:
 
 ---
 
+## ⚙️ Setup Instructions (Linux / Kali)
+
+> ✅ Tested on Kali Linux 2024.2 and Ubuntu 22.04
+
+### 1️⃣ Clone the Project
+
+\`\`\`bash
+git clone https://github.com/arjunjaincs/ids.git
+cd ids
+\`\`\`
+
+### 2️⃣ Create & Activate Virtual Environment
+
+\`\`\`bash
+python3 -m venv venv
+source venv/bin/activate
+\`\`\`
+
+### 3️⃣ Install Required Libraries
+
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+---
+
+## 🚀 How to Run the IDS
+
+Make sure your **network interface** is correct:
+
+\`\`\`python
+INTERFACE = "wlan0"
+\`\`\`
+
+(Modify this in \`terminal_ids.py\` if needed.)
+
+### ✅ Run the Real-Time Terminal IDS
+
+\`\`\`bash
+sudo venv/bin/python terminal_ids.py
+\`\`\`
+
+This will:
+- Start live packet sniffing using Scapy
+- Classify traffic as ✅ NORMAL or 🚨 ATTACK
+- Display live dashboard and save logs to `/logs/`
+
+---
+
 ## 🧪 Run Test Attacks (from another machine or VM)
 
 Make sure you're on the **same network (e.g., via hotspot)**.
 
-```bash
+\`\`\`bash
 # 1. 🔥 SYN Flood
 sudo hping3 -S <target_ip> -p 80 --flood
 
@@ -136,25 +123,37 @@ sudo hping3 -S <target_ip> -p 80 --tcp-timestamp --flood
 
 # 6. 🐢 Slow Stealth Scan
 sudo nmap -sS -T2 <target_ip> -p 1-100
-```
+\`\`\`
+
+---
+
+## 📁 Log Files
+
+After every session:
+- Logs are saved to:  
+  - \`logs/ids_log_<timestamp>.csv\`  
+  - \`logs/ids_log_<timestamp>.log\`
+- A summary header is written to the top of both files
+- Logs only store **IP, port, protocol, timestamp, and label**
+- ✅ No raw packets or payloads are saved (privacy friendly)
 
 ---
 
 ## 🗂️ Project Structure
 
-```bash
+\`\`\`bash
 ├── terminal_ids.py          # 🖥️ Main real-time IDS dashboard
 ├── train_model.py           # 🧠 Model training script
 ├── utils/
 │   └── ids_utils.py         # 🔧 Feature extraction & heuristics
 ├── data/
-│   ├── ids_model_final.pkl        # 💾 Trained model
+│   ├── ids_model_final.pkl  # 💾 Trained model
 │   └── confusion_matrix.png # 📈 Model evaluation
 ├── logs/                    # 📁 Logged sessions (auto-created)
 ├── requirements.txt         # 📦 Dependencies
 ├── LICENSE                  # 🧾 MIT License
 └── README.md                # 📚 You're here!
-```
+\`\`\`
 
 ---
 
