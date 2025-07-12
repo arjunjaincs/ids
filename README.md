@@ -139,6 +139,19 @@ After every session:
 
 ---
 
+## ⚡ Performance Optimizations
+
+To ensure real-time operation and minimal latency, the following enhancements were added to the terminal-based IDS:
+
+- Buffered log writing with auto-flush every second
+- Idle-state detection to reduce redraw and CPU usage
+- Auto-resize support using curses for stable UI rendering
+- Lightweight, efficient feature extraction (18 fields per packet)
+- Graceful shutdown with final summary generation
+- Timestamped logs with summaries to prevent data loss
+
+---
+
 ## 🗂️ Project Structure
 
 ```bash
