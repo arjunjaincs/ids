@@ -102,6 +102,21 @@ This will:
 
 ---
 
+## 🖼️ Demo
+### Normal Working
+
+![Normal](assets/Normal.png)
+
+### Terminal Dashboard under Attack
+
+![Terminal IDS](assets/Realtime_Attack.png)
+
+### Logging
+
+![Logs](assets/Terminal_Logs.png)
+
+---
+
 ## 🧪 Run Test Attacks (from another machine or VM)
 
 Make sure you're on the **same network (e.g., via hotspot)**.
