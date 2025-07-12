@@ -58,23 +58,23 @@ A fully interactive **terminal-based live dashboard** displays real-time alerts 
 
 ### 1️⃣ Clone the Project
 
-\`\`\`bash
+```bash
 git clone https://github.com/arjunjaincs/ids.git
 cd ids
-\`\`\`
+```
 
 ### 2️⃣ Create & Activate Virtual Environment
 
-\`\`\`bash
+```bash
 python3 -m venv venv
 source venv/bin/activate
-\`\`\`
+```
 
 ### 3️⃣ Install Required Libraries
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ---
 
@@ -82,17 +82,17 @@ pip install -r requirements.txt
 
 Make sure your **network interface** is correct:
 
-\`\`\`python
+```python
 INTERFACE = "wlan0"
-\`\`\`
+```
 
 (Modify this in \`terminal_ids.py\` if needed.)
 
 ### ✅ Run the Real-Time Terminal IDS
 
-\`\`\`bash
+```bash
 sudo venv/bin/python terminal_ids.py
-\`\`\`
+```
 
 This will:
 - Start live packet sniffing using Scapy
@@ -105,7 +105,7 @@ This will:
 
 Make sure you're on the **same network (e.g., via hotspot)**.
 
-\`\`\`bash
+```bash
 # 1. 🔥 SYN Flood
 sudo hping3 -S <target_ip> -p 80 --flood
 
@@ -123,7 +123,7 @@ sudo hping3 -S <target_ip> -p 80 --tcp-timestamp --flood
 
 # 6. 🐢 Slow Stealth Scan
 sudo nmap -sS -T2 <target_ip> -p 1-100
-\`\`\`
+```
 
 ---
 
@@ -141,7 +141,7 @@ After every session:
 
 ## 🗂️ Project Structure
 
-\`\`\`bash
+```bash
 ├── terminal_ids.py          # 🖥️ Main real-time IDS dashboard
 ├── train_model.py           # 🧠 Model training script
 ├── utils/
@@ -153,7 +153,7 @@ After every session:
 ├── requirements.txt         # 📦 Dependencies
 ├── LICENSE                  # 🧾 MIT License
 └── README.md                # 📚 You're here!
-\`\`\`
+```
 
 ---
 
